@@ -1,0 +1,51 @@
+@font-face {
+    src: url(fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+    font-family: Montserrat;
+    font-style: italic;
+}
+
+@font-face {
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+    font-family: Roboto;
+    font-style: Black;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 3px 2px 1px #d18484;
+}
+
+
+body {
+    background-color: #1b1b1c;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Roboto static;
+    font-size: 21px;
+}
+
+pre{
+    color: rgb(252, 252, 252);
+    font-family: monospace;
+}
+
+button {
+    background-color: #c9b3b3;
+    border-radius: 20px;
+}
+
+
+.content{
+    text-align: center;
+    margin-top: 10px ;
+    border-top: 3px solid #fffdfc;
+    border-bottom: 3px solid rgb(252, 252, 252) ;
+}
+
+
+.sources {
+    text-align: center;
+    border: 3px solid #fffdfc;
+    border-radius: 20px;
+    color: rgb(252, 252, 252);
+    font-family: monospace;
+}

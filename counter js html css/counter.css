@@ -1,0 +1,86 @@
+#counterLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#containerBTN{
+    display: block;
+    text-align: center;
+}
+
+.dbtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color : white;
+    background-color: #171414;
+
+}
+
+.dbtn:hover {
+    background-color: #a6908f;
+}
+
+
+.rbtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color : white;
+    background-color: #171414;
+
+}
+
+.rbtn:hover {
+    background-color: #a6908f;
+}
+
+.ibtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color : white;
+    background-color: #171414;
+
+}
+
+
+.ibtn:hover {
+    background-color: #a6908f;
+}
+
+
+
+.containerNew {
+    margin-top: 10rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+
+.yess {
+    padding: 10px 20px;
+    margin-top: 100px;
+    font-size: 1em;
+    color : white;
+    background-color: #171414;
+    border-radius: 20px;
+}
+
+.yess:hover{
+    background-color: #a6908f;
+}
+
+
+.noo {
+    padding: 10px 20px;
+    margin-top: 100px;
+    font-size: 1em;
+    color : white;
+    background-color: #171414;
+    border-radius: 20px;
+}
+
+.noo:hover{
+    background-color: #a6908f;
+}

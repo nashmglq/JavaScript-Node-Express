@@ -1,0 +1,257 @@
+@font-face {
+    src: url(fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+    font-family: Montserrat;
+    font-style: italic;
+}
+
+@font-face {
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+    font-family: Roboto;
+    font-style: Black;
+}
+
+body{
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+    background-color: #236bf5;
+    font-family: Roboto;
+    font-size: 30px;
+    color : white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.first{ 
+    margin : 0;
+    margin-left: 60px;
+    margin-top: 100px;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 40px;
+
+}
+
+.second{ 
+    margin : 0;
+    margin-top: 100px;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 40px;
+
+}
+
+.p1 {
+    margin : 0;
+    margin-left: 60px;
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+.p2 {
+    margin : 0;
+    margin-left: 60px;
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+.p3 {
+    margin : 0;
+    margin-left: 60px;
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+.p4 {
+    margin : 0;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+.p5 {
+    margin : 0;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+
+.span1 {
+    margin : 0;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+
+
+
+.headerForm {
+    margin: 0;
+}
+
+.headerLabel {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300 ;
+}
+
+.headerInput {
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-weight: 300 ;
+    
+}
+
+.formSubmit {
+    background-color: #236bf5;
+    border: 1px solid black;
+    color: white;
+
+
+
+}
+
+.createAccount{
+    background-color: #478037;
+    color: white;   
+    width: 300px;
+    height: 60px;
+    border-radius: 20px ;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.image {
+    height: 100px;
+    margin-right: auto;
+}
+
+
+.imgNews {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+    height: 80px ;
+}
+
+.sharerNews {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+    height: 80px ;
+}
+
+.imgMore {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+    height: 80px ;
+}
+
+
+
+.Signup {
+    position: absolute;
+    top: 50px; 
+    right: 20px; 
+    
+
+}
+
+.name {
+    margin-top : 20px;
+    margin-right: 10px;
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: 400px;
+    height: 30px;
+}
+
+.nameNumber {
+    margin-top : 20px;
+    margin-right: 10px;
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width:  830px;
+    height: 30px;
+}
+
+
+.Birthday {  
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width:  200px;
+    height: 30px;
+
+}
+
+.p6 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    
+
+}
+
+
+.Female {
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    
+
+}
+
+.Male {
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    
+
+}
+
+.all {
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    
+
+}
+
+
+

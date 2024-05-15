@@ -1,0 +1,26 @@
+.container {
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6em;
+}
+
+
+.age {
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 30px;
+}
+
+.submit {
+    padding: 10px 20px; 
+    color: white;
+    background-color: #1c1919;
+    font-size: .2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+.submit:hover{
+    background-color:#6b5756 ;
+}

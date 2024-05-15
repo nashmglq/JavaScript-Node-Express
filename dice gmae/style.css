@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+button {
+    border-radius: 20px;
+    background-color: #33b857;
+    width: 100px;
+    height: 50px;
+    color: white;
+}
+
+
+button:hover{
+    background-color:#004011 ;
+}
+
+button:active{
+    background-color:#004011 ;
+}
+
+
+input{
+    height: 30px;
+}
