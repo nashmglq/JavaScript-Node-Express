@@ -1,0 +1,16 @@
+.myButton{
+    border-radius: 20px;
+    font-size: 4rem;
+    padding: 10px 20px;
+    border: none;
+}
+
+.enabled{
+    background-color: black;
+    color: white;
+}
+
+.disable{
+    background-color: bisque;
+    color: white;
+}
