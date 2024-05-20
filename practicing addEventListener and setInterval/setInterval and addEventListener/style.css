@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button{
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    background-color: #6f4da1;
+    color: white;
+    cursor: pointer;
+}
