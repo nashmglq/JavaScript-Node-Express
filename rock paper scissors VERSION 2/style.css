@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+#restartNo{
+    position: absolute;
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    margin-top: 10px;
+    padding: 20px;
+
+}
+
+#troll {
+    height: 200px;
+    width: 150px;
+}

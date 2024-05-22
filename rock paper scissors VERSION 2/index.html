@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>💎 📝 ✂</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <h1>Rock Paper Scissors</h1>
+      <p id="scoreUser">...</p>
+      <p>
+        <img class="myAmmo" src="img/rock.png" onclick="myAim('rock')" />
+        <img class="myAmmo" src="img/paper.png" onclick="myAim('paper')" />
+        <img
+          class="myAmmo"
+          src="img/scissors.png"
+          onclick="myAim('scissors')"
+        />
+      </p>
+
+      <h2 id="userFinal"></h2>
+      <hr />
+
+      <p id="robotAnswer"></p>
+
+      <p id="whoWon"></p>
+      <p id="robotScore">...</p>
+
+
+      <h1 id="finalWinner"></h1>
+      <button id="restart" style = "visibility: hidden;">Play Again?</button>
+      <button id="restartNo" style = "visibility: hidden;">NAH!</button>
+      <br/>
+      <img id = "troll" src="img/giphy.gif" style = "visibility :hidden;" />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
