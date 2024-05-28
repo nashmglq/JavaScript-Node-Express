@@ -51,7 +51,7 @@ function displayWeatherInfo(data) {
 
   cityDisplay.textContent = `${city}, ${country}`;
   tempDisplay.textContent = `${(temp - 273.15).toFixed(1)} ° C`;
-  humiDisplay.textContent = humidity;
+  humiDisplay.textContent = `${humidity}%`;
   descriptionDisplay.textContent = description;
   weatherEmojiDisplay.textContent = displayEmoji(id);
 
