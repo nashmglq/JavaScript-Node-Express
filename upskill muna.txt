@@ -1,0 +1,251 @@
+hr == line
+br == break / add spaces
+pre == take what u type with spaces or margin? so same with p lang 
+
+
+HYPERLINK
+a tags == "arnchor" link to is href (it can contain target, title, email, and link)
+
+img src = " " === to put image
+video src
+audio src  ( <source> </source> )
+
+
+span inline
+div blocks
+center the body (try it)
+
+type of list : 
+Unorder List : bullet form
+Order List : integer 
+Description List : parang div den 
+
+MUST FOCUS ON FORMS PERO MAY DOCU NAMAN DUN
+
+
+much easier if we use color picker and fonts.google.com
+
+
+
+JAVASCRIPT:
+% remainder
+** exponent
+
+.textContent == printing text
+.value == getting value of the input
+converting? Number(variable)
+
+let == can be change
+const == cant be change
+
+id == JAVASCRIPT
+class = css
+
+pede mo naman const = document.getElementbyId("var); // na agad sa const
+or decleration
+
+
+NOW ALAM MO NA ANG IF ELSE, try creating a register form using JS, HTML, and CSS
+
+okay na nakakalimutan lang semicolons and .value and source
+
+== : di na nya tinitignan what type of data
+=== : check ano type (int? char?) mas safe to
+
+
+same with != and !==
+
+
+for loop == to access the value   array [i] so it will find waht index
+the i is the index 0,1,2,3
+
+IF U WILL USE "for (let loop in loops)" the loop will be the "i" or index (0,1,2,3) and the loops is the array ["no", "lol", "qwe", "qweeeeewqeqq1"]
+
+LOOPS: TASK TOM TRY MAKING THAT C++ ASSIGNEMNT ON UR FRESHMAN YEAR! ung * na triangle? try doing it in c++, python, and javascript!!
+
+if object {} just use the "for (let loop in loops)" 
+
+break = stop the loop
+continue = skip the iteration
+
+
+callbacks = "Hey, when this task is done, do this other thing!" 
+execute the function and excutre the second function which is like an argument
+
+forEach = iterate an element (array?) using callbacks
+
+// aray == numbers (ung buong array)
+// index == kung pang ilan na siya sa loob ng array (0 1 2 3) help to track
+//element == calling the laman ng aray (1? 2?)
+
+// so if element and index  index is 0 and element is 1
+
+element, index, array
+
+Exactly! You've got it spot on:
+
+array: Represents the whole array.
+index: Tracks which position the current element is in within the array.
+element: Represents the value of the current element being processed in the array.
+
+TAKE NOTE:  forEach WILL CHANGE THE ARRAY 
+
+map() = it will give a new set of array 
+
+need mo pa mag declare ng new const
+.map() WONT CHANGE THE ORIGIANL ARRAY
+
+filter() = filter the given argument and wont change the original array
+
+reduce() = turn element of an array to a single value
+
+
+function expression == a way to define functions as variabales 
+or pede mo isipin na ang callback mo is buong function na siya na code
+
+arrow functions == (parameters) => somecode
+
+so const yo = (name) => do this;
+
+TAKE NOTE: const hello = function can be called as hello()
+
+LEARNING OOP
+
+object == key value... (can also take function(){} or () => {})
+
+this == use "this" when trying to access a variable when inside the object (this wont work on arrow function)
+
+ex. u r inside a tree { fruit : "apple" },   tree.fruit (if u are outisde the object) 
+
+if u are inside the tree sayHello : function() {console.log(`hello ${this.fruit}`)}
+
+
+Constructor == a constructor is like a special recipe for making objects in JavaScript.
+it is like assinging where the code that you input google
+
+
+this.sayHello = function () {}
+// this is a function so when you call it you need to call it like
+person.sayHello()
+
+
+class == like constructor but more cleaner and way better
+
+// like a blueprint para alam mo na ano gagawin and saan lalagay ung inputs
+
+Why do we use class?
+
+ans. organize code, group similar function and data, so we can re use it 
+
+STATIC == declared static belngs to the class 
+so no need to do this : const car1 = new Car (); console.log (car1)
+
+just this console.log (class.var);
+
+TAKE NOTE: static means KAY CLASS NA SIYA
+
+BUT if you want to access another static in the same class make sure to use "this"
+
+
+TAKE NOTE: kung nalilito always remember constructor is for initailzie
+and class contians constructor 
+
+so class is to re use and we can use constructor to build class? yes or no?
+AI:  Yes.
+
+THE 4 PILLARS OF OOP:
+
+INHERITANCE = passing or to inherit properties from other class 
+- so hindi mo na need ulit ulitin ung program...
+- SUPER = it is to access the parent constructor ex. super (paraments)  super.function()
+-getters = make propert readible so it will get the set (so get function, you can also add additional logic)
+- setter = make property writeable this where we write the funciton/code (set new)
+- desctructuinrg = swaaping element of an array  [] =  array  {}= extract values of objects
+... think of it like this const {parameter1, parameter2} = suubject
+... if function ({}) dispaly ung function(const)
+
+TAKE NOTE: [] = array     {} = object
+
+- nested object = placing an object from other objects
+
+object = key and value
+
+array = set of data
+
+... parent is the one who mainly we talk about ... childeren is inherting from parent
+ 
+- sort()= sorts elements as strings in lexicographic order (alphabet + numbers + symbols)
+
+- date(year, month, day, hour, minute, second, ms)
+
+-closure = function inside a function, it makes it pritvate para di apektado ng mga fucntion na hindi belong sa funtion na ung
+
+TAKE NOTE. IF U USE RETURRN MAKE USER TO PRINT IT  OUT
+
+- setTimeout(callback, delay(TIME OF THE EXUCATIAON OF THE FUNCTION))
+- clearTimeout(const) = this will cancel the timeout
+TAKE NOTE: IF A VAR DOES NOT HAVE ( CONST, VAR, OR LET) IT MEANS IT IS A GLOBAL VAIRBALE WHICH CNA BE ACCESS ANYHERewe
+
+keyword "new" is to create a new instante or value
+
+setInterval == call a fucntion depending on interval
+clearInterval == it will stop the interval
+
+TAKE NOTE: when you want to add a function like onclick on your code
+for esxample you want to call start() call it like use.onclick = start
+becuase if you called it as start() it will execute it without the onclick
+becuase you are calling the function already
+
+
+synchronus = execute line by line with other example, task 1 then task 2
+- so basically we cannot move to other line unless we finsiht the first one
+
+asynchrounus = allows multiple operation to be perform without waiting
+- so it does not block the executaion flow, so no need to wait for the other code
+- it will execute on its own no need to wait for others
+
+
+learning error handling 
+- try {} catch(error) {} this will run the code but with error handling
+- try using finally {} this code will execute even with error
+
+
+backspace? use slice(start, where we slice) ex. slice (0,-1)
+so it will slice everything except the starting poitn
+
+.addEvenntlistner (event, callback)
+events = click, mouseover, mouseout
+
+EX code.
+mybox.addEventListener("mouseout", (event) => {
+  event.target.style.backgroundColor = "orange";
+  event.target.textContent = "PLEASE?";
+});
+
+we use arrow function here..
+
+
+key events? here are some snippet code:
+
+document.addEventListener("keydown", (event) => {
+   key.textContent = "release?"
+   key.style.backgroundColor = "red"
+})
+
+
+document.addEventListener("keyup", (event) => {
+    key.textContent = "press?"
+    key.style.backgroundColor = "green"
+})
+
+CALLBACK == parang messenger na nag sasabe if tapos na yung function na hinihintay mo
+
+function task1 (callback) {
+  callback () // callback next function
+}
+
+
+PROMISE == new Promise((resolve, reject)) => {asnuych code}
+
+ASYNC == MAKES A FUNCTION RETURN A PROMISE
+AWAIT == MAKES AN ASUYNCH FUNCTION WAIT FOR A PROMISE

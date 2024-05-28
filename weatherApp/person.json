@@ -1,0 +1,14 @@
+[
+{   "name": "lolz",
+    "age" : 23,
+    "isLegal" : true,
+    "favFood" : ["egg", "pizza", "burger"]
+},
+{  
+    "name": "www",
+    "age" : 18,
+    "isLegal" : false,
+    "favFood" : ["chicken", "taco", "burger"]
+
+}
+]
