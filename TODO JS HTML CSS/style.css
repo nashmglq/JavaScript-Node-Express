@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    background-color: #e8caed;
+    font-family: 'Gluten', sans-serif;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+.login {
+    position: relative;
+    margin: auto;
+    margin-top: 30vh;
+    background-color: #aa78b3;
+    border: none;
+    border-radius: 30px;
+    width: 60vh;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+input{
+    font-family: 'Gluten', sans-serif;
+    border:none;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: white;
+    background-color:#dba2ce ;
+    padding: 10px 20px;
+    width: 25vh;
+    font-size: 1rem;
+
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.submit{
+    display: block;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'Gluten', sans-serif;
+    border: none;
+    border-radius: 20px;
+    margin: 20px auto 0 auto;
+    background-color: #de95cd;
+    color: white;
+    transition: background-color 0.5s ease;
+    
+}
+
+.submit:hover{
+    background-color: #ba84ae;
+}
+
+/* TODO LIST CSS */
+
+.todo {
+    position: relative;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: #aa78b3;
+    border: none;
+    border-radius: 30px;
+    width: 60vh;
+    padding: 20px;
+    font-size: 1.33rem;
+}
+
+#todoh1{
+    font-size: 2rem;
+}
+
+#todoinput{
+    font-family: 'Gluten', sans-serif;
+    border:none;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: white;
+    background-color:#dba2ce ;
+    padding: 10px 20px;
+    width: 30vh;
+    font-size: 1rem;
+
+}
+
+
+.check{
+    color:white;
+}
+
+
+#todosubmit{
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: 'Gluten', sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: #de95cd;
+    color: white;
+    transition: background-color 0.5s ease;
+    
+}
+
+#todosubmit:hover{
+    background-color: #ba84ae;
+}
+
+.listOfwhat {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto; 
+    border: none; 
+    padding: 10px; 
+}
+
+
+
+.newDiv {
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+
+.buttonD {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #c42b2b;
+    font-family: 'Gluten', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+
+  }
+  

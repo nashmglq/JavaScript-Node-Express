@@ -15,6 +15,16 @@ span inline
 div blocks
 center the body (try it)
 
+CSS: 
+block-level = take the whole line (ex. h1, div, p)
+inline only tkaes their part (ex. span, a ,img)
+
+
+display : block; will make it a block (literally)
+display : inline; will line the two even block-level with inline or vice versa
+display : inline-block; almost the same but we can add width and height 
+
+
 type of list : 
 Unorder List : bullet form
 Order List : integer 
