@@ -1,0 +1,235 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+
+
+  <form class="container">
+    <label> Search a Pokemon Name or ID: </label>
+    <br/>
+    <input type = "text" id = "search-input" required>
+    <button id = "search-button"> Search </button>
+    <br/>
+    <span id = "pokemon-name"> </span>
+    <br/>
+    <span id = "pokemon-id"> </span>
+    <br/>
+    <span id = "weight"> </span>
+    <span id = "height"> </span>
+    <br/>
+
+
+    <img src = "" id = "sprite">
+
+    <div class="info">
+      <p id="types"> type</p>
+      <table>
+        <tr>
+          <th>Base</th>
+          <th>Stats</th>
+        <tr>
+        <tr>
+          <td>HP</td>
+          <td id="hp"></td>
+        </tr>
+        <tr>
+          <td>ATTACK</td>
+          <td id="attack"></td>
+        </tr>
+        <tr>
+          <td>DEFENSE</td>
+          <td id="defense"></td>
+        </tr>
+        <tr>
+          <td>SPECIAL-ATTACK</td>
+          <td id="special-attack"></td>
+        </tr>
+        <tr>
+          <td>SPECIAL-DEFENSE</td>
+          <td id="special-defense"></td>
+        </tr>
+        <tr>
+          <td>SPEED</td>
+          <td id="speed"></td>
+        </tr>
+
+      </table>
+
+    </div>
+
+  </form>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  font-family: Arial;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  background-color:#282f3b;
+  color: black;
+}
+
+.container{
+  background-color: #ffffff;
+  box-shadow: 10px 10px #c1cfd4;
+  padding: 20px 10px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  height: 530px;
+  width: 50vh;
+}
+
+label{
+  margin-bottom: 40px;
+}
+
+button{
+  border: none; 
+  border-radius: 20px;
+  background-color: #6291a1;
+  color: white;
+  padding: 10px 10px;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+}
+
+button:hover{
+  background-color: #39606e;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+td {
+  text-align: center;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+** end of undefined **
+
+** start of undefined **
+
+const search = document.querySelector(".container");
+const userInput = document.getElementById("search-input");
+const url = "https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/";
+const namePokemon = document.getElementById("pokemon-name");
+const idPokemon = document.getElementById("pokemon-id");
+const weightPokemon = document.getElementById("weight");
+const heightPokemon = document.getElementById("height");
+const pokemonImg = document.getElementById("sprite");
+const hpPokemon = document.getElementById("hp");
+const attackPokemon = document.getElementById("attack");
+const defensePokemon = document.getElementById("defense");
+const specialAttackPokemon = document.getElementById("special-attack");
+const specialDefensePokemon = document.getElementById("special-defense");
+const speedPokemon = document.getElementById("speed");
+const typePokemon = document.getElementById("types");
+const searchButton = document.getElementById("search-button");
+
+searchButton.addEventListener("click", async (event) => {
+  event.preventDefault();
+
+  let userInputPokemon = userInput.value.toLowerCase();
+  let userInputNumber = Number(userInputPokemon);
+
+  try {
+    let res;
+    if (Number.isInteger(userInputNumber)) {
+      res = await fetch(url + userInputNumber);
+    } else {
+      res = await fetch(url + userInputPokemon);
+    }
+
+    if (!res.ok) {
+      throw new Error("Pokémon not found");
+    }
+
+    const data = await res.json();
+    destructurePokemon(data);
+  } catch (err) {
+    window.alert("Pokémon not found");
+    console.log(err);
+  }
+});
+
+const destructurePokemon = (data) => {
+  const { name, id, weight, height, sprites: { front_default }, types, stats } = data;
+
+
+
+
+  typePokemon.textContent = "";
+
+  types.forEach(event => {
+    const newType = document.createElement("div");
+    newType.textContent = event.type.name.toUpperCase();
+
+    typePokemon.appendChild(newType)
+
+  });
+
+  //how is the flow? it will iterate on the type, event will represent the type, now it will get the type.name and uppercase it, and each type will be append 
+
+  // So 1st types, it will be represented by event.
+  // Now event will get the type.name and uppercase it.
+  // The 1st type will be appended
+
+  // if there is a second one it will just do the same, it is a fluid motion
+
+
+  // but I still dont get it why we user forEAch, is it because we are adding a new value? and not just getting the value from the original?
+
+
+
+
+  // REMOVE PREFIX LOL
+  namePokemon.textContent = name.toUpperCase();
+  idPokemon.textContent = id;
+  weightPokemon.textContent = weight;
+  heightPokemon.textContent = height;
+  pokemonImg.src = front_default;
+  hpPokemon.textContent = stats[0].base_stat;
+  attackPokemon.textContent = stats[1].base_stat;
+  defensePokemon.textContent = stats[2].base_stat;
+  specialAttackPokemon.textContent = stats[3].base_stat;
+  specialDefensePokemon.textContent = stats[4].base_stat;
+  speedPokemon.textContent = stats[5].base_stat;
+};
+
+
+** end of undefined **
+
