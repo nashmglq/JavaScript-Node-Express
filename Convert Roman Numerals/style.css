@@ -1,0 +1,37 @@
+body{
+    font-family: Arial;
+    text-align : center;
+    background-color: #243266;
+  }
+  
+  .container{
+    background-color: #525d85;
+    border: 4px solid white;
+    color: white;
+    font-weight: bold;
+    height: 20vh;
+    width: 50vh;
+  
+  }
+  
+  #output{
+    margin-top: 20px;
+    background-color: #525d85;
+    border: 4px solid white;
+    color: white;
+    font-weight: bold;
+    height: 20vh;
+    width: 50vh;
+    display: none;
+  
+  }
+  
+  button{
+    margin-top: 10px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #d9b43d;
+    font-weight: bold;
+    
+  }
