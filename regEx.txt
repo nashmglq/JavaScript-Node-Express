@@ -1,0 +1,49 @@
+RegEx (Regular Expression)
+
+//g = used (g is for global)
+/e+/g = finding 1 or more e
+/e+a?/g = ? is for optional (optional to find e and a)
+/ea?/g = ? is for optional (now if we have ea show ea, else e)
+/ea*/g = * match 0 or more, match everythin with optionallity (if eea MATCH)
+/.ea/g = . match everything as long as you have the two
+/\./g = \. backslash reads the next char as normal and not special
+/.\./g = .\. match before "." then the charachter "."
+/\w/g = \w any words;
+/\W/g = capital W match non words
+/\s/g = any white space
+/\S/g = capital s will match non white space
+/\w{4,5}/g = will get 4 or greater than 5
+/[fc]at/g = braket will get either f or c and find ending A and T
+/[a-z]at/g = get everthing start a to z;
+/[a-zA-Z]at/g = get everthing start a to z with capital
+/[0-9]/g = 0 to 9;
+/(t|T)/g = get t or T, parenthesis like on math we need them to seperate to the other var
+/(t|r|e){2,3}/g = match between the three and get the min and max
+/^/g = get the uppercase of the block 
+/(?<=[tT]he)./g = look behind means proceed to the next one if "the" it wil show the white space
+/(?<![tT]he)./g = will not get the next one of the  choosen word
+/.(?=at)/g = anything before at (LOOK AHEAD)
+/\d\g = digit 
+
+/\d{3}[ |-]?\d{3}[ |-]?\d{4}/g = great example to capture this:
+1234567890
+123-456-7890
+123 456 7890
+
+
+/(?:(\+1)[ |-]?)?\(?(?<areacode>\d{3})\)?[ |-]?(\d{3})[ |-]?(\d{4})/g
+
+1234567890
+123-456-7890
+123 456 7890
+(123) 456-7890
++1 123 456 7890
++1123 456 7890
+
+lets break it down
+?<areacode> == name
+(?:(\+1)[ |-]?)? == "?:", non caputring group && "(\+1)[ |-]?" get special +1 and group them with optional space or dash the whole group is optional as well
+\(? == optional parenthesis
+
+ 
+
