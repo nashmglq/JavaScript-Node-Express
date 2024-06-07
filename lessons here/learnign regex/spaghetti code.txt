@@ -1,0 +1,99 @@
+const userNumber = document.getElementById("user-input");
+const checkBtn = document.getElementById("check-btn");
+const clearBtn = document.getElementById("clear-btn");
+const divResult = document.getElementById("results-div");
+const restrict = /[a-zA-Z!@#$%^&?*]/g;
+const testInput1 = /^\(\d{3}\)\d{7}$/; // test if 1 (###) ####
+const testInput2 = /\(.*\)/;
+const testInput3 = /\-/g;
+
+const openParen = /\(/;
+const closeParen = /\)/;
+
+
+checkBtn.addEventListener("click", event => {
+  event.preventDefault;
+
+  let userValue = userNumber.value;
+  let userCheckerNegative = userValue.slice(0, 1);
+  let userStart = userValue.slice(0, 1);
+  if (userValue) {
+
+    let removeSc = userValue.replace(/[,._()_:\/\\\- ]/g, "");
+    if (restrict.test(removeSc)) {
+      divResult.textContent = `Invalid US number: ${userValue}`;
+
+    }
+    else if (/\(\d{10}\)/.test(userValue)) {
+      divResult.textContent = `Invalid US number: ${userValue}`;
+    } else if (/^\d{2} \d{2}-\d{2}-\d{3}-\d{1}$/.test(userValue)) {
+      divResult.textContent = `Invalid US number: ${userValue}`;
+    }
+
+    else if (testInput1.test(userValue)) {
+      divResult.textContent = `Valid US number: ${userValue}`;
+    }
+    else if (testInput1.test(userValue)) {
+      divResult.textContent = `Invalid US number: ${userValue}`;
+      console.log("()")
+    }
+    else if (testInput3.test(userCheckerNegative)) {
+      divResult.textContent = `Invalid US number: ${userValue}`
+      console.log("-")
+    }
+
+    else if (userValue.length === 10) {
+      divResult.textContent = `Valid US number: ${userValue}`
+      console.log("userValue 10")
+
+    }
+
+    else if (removeSc.length >= 10 && removeSc.length <= 11) {
+
+      if (userStart.includes(1)) { // 1 is the only one allow
+        let sliceLenght = removeSc.slice(1, removeSc.length)
+
+        if (sliceLenght.length === 10) {
+          divResult.textContent = `Valid US number: ${userValue}`
+          console.log("DITO BA?")
+
+        }
+        else {
+          divResult.textContent = `Invalid US number: ${userValue}`;
+
+          console.log("INVALUID 10")
+
+        }
+      }
+      else if (removeSc.length === 10) {
+        divResult.textContent = `Valid US number: ${userValue}`;
+        console.log("FUCK")
+      }
+      else {
+        divResult.textContent = `Invalid US number: ${userValue}`;
+        console.log("ewan")
+        console.log(removeSc.length)
+      }
+    }
+
+    else if (removeSc.length < 10) {
+      divResult.textContent = `Invalid US number: ${userValue}`
+      console.log("less 10")
+    }
+
+
+    else {
+      divResult.textContent = `Invalid US number: ${userValue}`;
+      console.log("ewan ko den")
+    }
+
+
+  } else {
+    window.alert("Please provide a phone number");
+  }
+
+
+})
+
+clearBtn.addEventListener("click", () =>
+  divResult.textContent = "");
