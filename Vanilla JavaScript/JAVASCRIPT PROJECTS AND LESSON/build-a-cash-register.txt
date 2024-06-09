@@ -1,0 +1,162 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <input type="number" id="cash" />
+    <button id="purchase-btn">PURCHASE</button>
+    <div id="change-due"></div>
+  </div>
+
+  <div id="output"></div>
+</body>
+<script src="./script.js"></script>
+
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+let price = 1.87;
+let cid = [
+  ["PENNY", 1.01],
+  ["NICKEL", 2.05],
+  ["DIME", 3.1],
+  ["QUARTER", 4.25],
+  ["ONE", 90],
+  ["FIVE", 55],
+  ["TEN", 20],
+  ["TWENTY", 60],
+  ["ONE HUNDRED", 100]
+];
+
+const cash = document.getElementById("cash");
+const changeDueDisplay = document.getElementById("change-due");
+const purchaseBtn = document.getElementById("purchase-btn");
+
+
+let currency = [
+  ["PENNY", .01],
+  ["NICKEL", .05],
+  ["DIME", .1],
+  ["QUARTER", .25],
+  ["ONE", 1],
+  ["FIVE", 5],
+  ["TEN", 10],
+  ["TWENTY", 20],
+  ["ONE HUNDRED", 100]
+];
+
+purchaseBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const cashValue = Number(cash.value);
+  const userChange = cashValue - price; // get the change amount
+
+  //basic validation
+  if (cashValue < price) {
+    window.alert("Customer does not have enough money to purchase the item");
+  }
+
+  else if (cashValue === price) {
+    changeDueDisplay.textContent = "No change due - customer paid with exact cash"
+    return;
+  }
+
+  const changeResult = getUserChange(userChange, cid);
+
+  if (changeResult.status === "INSUFFICIENT_FUNDS" || changeResult.status === "CLOSED") {
+    changeDueDisplay.textContent = `Status: ${changeResult.status} ${changeFormat(changeResult.change)}`
+  } else {
+    let textChange = `Status: OPEN ${changeFormat(changeResult.change)}`;
+    changeDueDisplay.textContent = textChange.trim();
+  }
+
+});
+
+
+const getUserChange = (changeAmount, cidParameter) => {
+  // add ALL the CID so we can check if our funds is valid
+  // TAKE NOTE: MDN WEB DOCS JS this can help with syntax
+
+
+  let totalCID = Number(cidParameter.reduce((sum, [key, value]) =>
+    sum + value, 0 // if we aint have the amount we can take 0
+  ).toFixed(2))
+
+  // we use one line so we do not need the  {} but if we put it make sure to add
+
+  if (totalCID < changeAmount) {
+    return { status: "INSUFFICIENT_FUNDS", change: [] }
+  }
+
+  // lets loop backward to check each array if amount is okay
+
+  let changeArray = [];
+  let remainChangeAmount = changeAmount;
+
+  for (let i = currency.length - 1; i >= 0; i--) {
+    let unitOfArray = currency[i][0]; // this is like cid[1] NICKEL and [0] will be the key
+    let unitValue = currency[i][1];
+    let unitDrawer = cid[i][1];
+
+    if (unitValue <= remainChangeAmount && unitDrawer > 0) {
+      let amountFromUnit = 0;
+
+      while (remainChangeAmount >= unitValue && unitDrawer > 0) {
+        remainChangeAmount = Number((remainChangeAmount - unitValue).toFixed(2))
+        unitDrawer -= unitValue;
+        amountFromUnit += unitValue;
+      }
+
+      if (amountFromUnit > 0) {
+        changeArray.push([unitOfArray, amountFromUnit])
+      }
+    }
+  }
+
+  console.log(totalCID)
+  if (remainChangeAmount > 0) {
+    return { status: "INSUFFICIENT_FUNDS", change: [] }
+  }
+
+  if (changeAmount === totalCID) {
+    return { status: "CLOSED", change: cidParameter };
+  }
+
+
+  return { status: "OPEN", change: changeArray }
+}
+
+// console.log(getUserChange(335.41, cid))
+
+const changeFormat = changeArrayP => {
+  console.log(changeArrayP); // Add this line to check the value of changeArrayP
+  if (!Array.isArray(changeArrayP)) {
+    console.error('Expected an array, but received:', changeArrayP);
+    return '';
+  }
+
+  const formattedArray = changeArrayP.map(([unit, amount]) => `${unit}: $${amount}`);
+
+  return formattedArray.join(" ");
+}
+
+
+** end of undefined **
+

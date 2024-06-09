@@ -259,3 +259,14 @@ PROMISE == new Promise((resolve, reject)) => {asnuych code}
 
 ASYNC == MAKES A FUNCTION RETURN A PROMISE
 AWAIT == MAKES AN ASUYNCH FUNCTION WAIT FOR A PROMISE
+
+
+REMEMBER MAP GET API 
+FOREACH CREATING NEW
+
+forEach: Yes, it gets each element and can change it directly in the original array. It doesn't create a new array.
+
+map: Yes, it creates a new array by applying a function to each element of the original array. It doesn't change the original array.
+
+
+OHH MAP WILL CREATE A NEW ONE WHILE THE FOREACH WILL JUST CHANGE THE ORIGINAL 

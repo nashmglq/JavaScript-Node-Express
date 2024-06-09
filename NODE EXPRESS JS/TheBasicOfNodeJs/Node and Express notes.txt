@@ -1,0 +1,60 @@
+What is NODE JS?
+- Run JS outside the browser
+- Build on Chrome's V8 JS Engine 
+- Can build Full stack (use only JS for both back and front)
+- Can be hosted anywhere (like heroku)
+
+
+NODE JS vs BROWSER:
+Run JS outside the browser
+
+
+NPM = node package manager
+
+So if we say NPM that means node package manager, so it is a script or code written as a package to right better code
+
+
+How to create Node folder???
+- npm init = get all package file
+- after that you will have the package.json
+- add "script": "node index.js" below scripts > test // this will serve as the app like in django
+
+
+How to run node js?
+- node <name of file>.js
+- or NPM start
+
+Why install nodemon?
+- npm i -g nodemon 
+if you want all the file with all program
+if you wnat to go only to your code only  use --save-dev 
+- NODEMON to restart app automatic, so if i save it will run
+
+process.exit(0) if 1 it will crash program // you can write as process.exit = 1;
+
+
+REPL = Read Evaluate Print Loop (type node to enter repl)
+
+To execute REPL you can also do this: 
+
+const repl = require("repl");
+
+const local = repl.start("REPL console started: ");
+
+how to run ARGUMENT?
+- node filename.js argument.var
+
+WHAT IS ARGS FOR? to let the user input, within the terminal
+
+
+output?
+%s fromat variable to string
+%d format var to number
+%i format to integer
+%o format to object
+
+input? 
+- user readline (and promt(optional))
+
+06-09-2024
+so far require("...") is a way to call a package or use it

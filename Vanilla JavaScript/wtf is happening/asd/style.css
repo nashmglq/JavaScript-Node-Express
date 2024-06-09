@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    background-color: #e8caed;
+    font-family: 'Gluten', sans-serif;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+
+    /* justify = center body */
+    /* text = center text */
+    /* align = align of center */
+}
+
+form{
+    position: relative;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: #aa78b3;
+    border: none;
+    border-radius: 30px;
+    width: 50vh;
+    height: 36vh;
+    margin-top: 30vh;
+}
+
+
+input{
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #d7a2e0;
+    font-family: 'Gluten', sans-serif;
+    padding: 10px 20px;
+    color: white;
+    width: 40vh;
+    font-size: 1.3rem;
+}
+
+#idlekuromi{
+    height: 13vh;
+    width: 13vh;
+}
+
+.submit{
+    margin-top: 1vh ;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Gluten', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #ed82ff;
+    transition: background-color 0.5s ease;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #d26fe3;
+}
+
+.submit:active{
+    background-color: #d26fe3;
+}
+
+.quiz {
+    position: relative;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: #aa78b3;
+    border: none;
+    border-radius: 30px;
+    width: 50vh;
+    height: 32vh;
+    margin-top: 30vh;
+    display: none; 
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    margin-top: 20px; 
+}
+
+
+.quiz2 {
+    position: relative;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: #aa78b3;
+    border: none;
+    border-radius: 30px;
+    width: 50vh;
+    height: 52vh;
+    margin-top: 20vh;
+    display: none; 
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.addImg{
+    height: 200px;
+    width: 200px;
+    border: 10px solid;
+    margin-top: 0px;
+}
+
+
+.quiz3 {
+    position: relative;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: #aa78b3;
+    border: none;
+    border-radius: 30px;
+    width: 50vh;
+    height: 52vh;
+    margin-top: 20vh;
+    display: none; 
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
