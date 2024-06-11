@@ -58,3 +58,34 @@ input?
 
 06-09-2024
 so far require("...") is a way to call a package or use it
+
+
+LINE USED FREQUENTLY with NPM:
+- npm init = bootstrap package json file (create json)
+- npm install = install dependencies
+|| how to use npm? npm install <package_name> [-g(global), --save-dev]
+- npm install <package_name>@<version> = install version
+- npm update = update all package
+- npm update <package_name> = update only one
+- npm run <task-name> = run certain
+- npm view <package_name> version = to check the version
+- npm uninstall <package_name> = uninstall package
+- npm help = list of command
+- npm list  = see all package
+- npm list -g = see all global package
+note: if you install it will only install locally
+
+
+NPX run executable in the .bin
+
+Semantic version
+4.18.1
+4= major version
+18= minor version
+1= patch version
+
+^4.18.1 = update minor or patch version
+~4.18.1 = patch version
+
+
+module.export or exports.data (but make sure the const is an object and call the data(or any name))
