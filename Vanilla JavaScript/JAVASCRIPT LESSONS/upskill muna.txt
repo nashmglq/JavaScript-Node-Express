@@ -270,3 +270,8 @@ map: Yes, it creates a new array by applying a function to each element of the o
 
 
 OHH MAP WILL CREATE A NEW ONE WHILE THE FOREACH WILL JUST CHANGE THE ORIGINAL 
+
+
+MAP() : i  will read the api to you, or i will create a new one without affecting the original (map is a great way to map or loop the data)
+
+FOREACH: AYO! i will change the orignal one WA HA HA  (foreach is a good one to create a lot of things but it can change the orignal) 
