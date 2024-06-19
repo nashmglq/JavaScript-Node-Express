@@ -89,3 +89,11 @@ Semantic version
 
 
 module.export or exports.data (but make sure the const is an object and call the data(or any name))
+
+
+TYPES OF HTTP RESPONSE
+100 - 199 = informational response
+200 - 299 = successful response
+300 - 399 = redirects
+400 - 499 = client error
+500 - 599 = server error
