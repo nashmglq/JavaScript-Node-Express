@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    cursor: pointer;
+    font-size: 3rem;    
+}
+
+
+#cellContainer{
+    display: grid; /* box, div, or lines */
+    grid-template-columns: repeat(3, auto);
+    max-width: fit-content;  /* squeez the content */
+    margin: auto; /* auto means automatic sizing based on the space of the content */
+    margin-bottom: 10px;
+}
