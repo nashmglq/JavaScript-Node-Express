@@ -1,0 +1,24 @@
+body{
+    color: white;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cell{
+    height: 75px;
+    width: 75px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.containerGame{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    
+}
